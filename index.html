@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="shortcut icon" href="img/LOGO 2.0.png" type="image/x-icon"/>
+    <title>MastercheffDelivery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html"> <img src="img/logo.webp" alt="Logo Masterchef"> </a>
+                </div> 
+                <button class="hamburguer active"></button>
+                <ul class="mennu active">
+                    <li><a href="https://api.whatsapp.com/message/AZ2OH4GBVG3QP1" target="_blank">Peça Online</a></li>
+                    <li><a href="cardapio.html" >Cardápio</a></li>
+                    <li><a href="#" >Promoções</a></li>
+                    <li><a href="historia.html" >A Masterchef Delivery</a></li>
+                </ul>
+            </nav>    
+    </header>
+    <section class="redes">
+        <a href="https://api.whatsapp.com/message/AZ2OH4GBVG3QP1" target="_blank">
+            <img  class="imgredes" src="img/whatsapp.webp"   alt="Logo Masterchef">
+        </a> 
+        <a href="https://www.instagram.com/mastercheffdelivery/" target="_blank">
+            <img class="imgredes" src="img/instagram.webp"  alt="Logo Masterchef">
+        </a>  
+    </section>
+    <main class="content">
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-bnt" id="radio1">
+                <input type="radio" name="radio-bnt" id="radio2">
+                <input type="radio" name="radio-bnt" id="radio3">
+                <input type="radio" name="radio-bnt" id="radio4">
+                <!--radio buttons start-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="img/IMG_1.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_2.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_3.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_4.webp" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navegation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navegation end-->
+            </div>
+            <!--manual navegation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navegation end-->
+        </div>
+            <!--image slider end-->
+            <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter >4){
+                    counter = 1;
+                }
+            }, 5000);
+            </script>
+    </main>
+    <!--slide images mobile initial-->
+   
+    <!--slide images mobile end-->
+
+    <section class="layout">
+        
+    </section>
+
+    <!--footer initial-->
+    <footer>
+        <nav class="menu-footer">
+            <a class="l-footer" href="#">Termos e condições</a>
+            <a class="l-footer" href= "#">Perguntas Frequentes</a>
+            <a class="l-footer" href="#">Fale conosco</a>
+            <a class="l-footer" href="#">Trabalhe conosco</a>
+        </nav>
+        <nav class="footer-social-media">
+            <a class="social-media" href="https://www.instagram.com/mastercheffdelivery/">
+                <img src="img/instagram.webp">
+                <P>Siga-nos no Instagram</P>
+            </a>
+            <a class="social-media" href="https://api.whatsapp.com/message/AZ2OH4GBVG3QP1">
+                <img src="img/whatsapp.webp">
+                <p>Peça via WhatsApp</p>
+            </a>
+        </nav>
+        <a class="img-footer" href="index.html">
+            <img src="img/logo.webp">
+        </a>
+        <div class="copyright">
+            <p>@2021 Todos os diteitos reservados a <a class="copyright-a" href="#">MasterChef Delivery</a> By <a class="copyright-a" href="#">Igor Mello</a></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
