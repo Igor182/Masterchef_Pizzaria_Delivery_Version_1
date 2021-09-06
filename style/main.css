@@ -558,6 +558,19 @@ footer{
     display: none;
 }
 
+.container {
+   display: flex;
+   width: 100%;
+}
+
+.bloco {
+    width: 100%;
+}
+
+.bloco img{
+    width: 500px;
+}
+
 .layout {
     background-image: url(../img/PIZZARIA\ LAYOUT.webp);
     height: 30vh;
