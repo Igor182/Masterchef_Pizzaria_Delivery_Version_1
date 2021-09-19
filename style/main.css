@@ -240,6 +240,10 @@ footer{
     display: none;
 }
 
+.bloco img {
+    width: 380px;
+}
+
 .sliderr {
     width: 100%;
 }
@@ -506,6 +510,7 @@ footer{
     /* geral*/
 
 
+
 .hamburguer {
     display: block;
     z-index: 999;
@@ -559,16 +564,7 @@ footer{
 }
 
 .container {
-   display: flex;
-   width: 100%;
-}
-
-.bloco {
-    width: 100%;
-}
-
-.bloco img{
-    width: 500px;
+    display: flex;
 }
 
 .layout {
